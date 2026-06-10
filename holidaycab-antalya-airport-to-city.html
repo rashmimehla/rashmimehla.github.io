@@ -4,762 +4,805 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How to get from Antalya Airport to Antalya | HolidayCab</title>
+<meta name="description" content="Compare all transport options from Antalya Airport (AYT) to the city center — private transfer, taxi, tram, shuttle and local bus, with prices and times.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --navy:#16293d;
-    --navy-2:#1d3450;
-    --green:#16c08a;
-    --green-d:#0fa676;
-    --ink:#1d2b3a;
-    --muted:#5d6b7a;
-    --line:#e4e9ee;
-    --bg:#ffffff;
-    --grey:#f4f6f8;
-    --star:#16c08a;
-    --star-off:#cfd8e0;
-    --radius:10px;
-    --maxw:1180px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Poppins','Segoe UI',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
-  h1,h2,h3,h4{font-family:'Poppins','Segoe UI',sans-serif;color:var(--navy);font-weight:700;line-height:1.2;}
-  a{color:var(--green-d);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
-  .green{color:var(--green-d);}
+:root{
+  --navy:#2c3a4e; --navy-2:#22303f; --ink:#2c3a4e; --body:#5a6a7e; --muted:#8a97a8;
+  --green:#16b186; --green-d:#0f8e6b; --green-bg:#e7f7f1;
+  --line:#e6eaef; --bg:#f6f8fa; --card:#ffffff;
+  --star:#1fc095; --amber:#f5a623;
+  --r:12px; --r-sm:8px;
+  --shadow:0 8px 28px rgba(44,58,78,.10);
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Mulish',system-ui,sans-serif;color:var(--body);background:#fff;font-size:16px;line-height:1.7}
+img{max-width:100%;display:block}
+a{color:var(--green-d);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{color:var(--ink);line-height:1.25;font-weight:800}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid rgba(22,177,134,.5);outline-offset:2px;border-radius:4px}
 
-  /* ---------- header ---------- */
-  header.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60;}
-  .top-inner{display:flex;align-items:center;justify-content:space-between;height:70px;}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--navy);}
-  .logo .mark{width:34px;height:34px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;}
-  .top-right{display:flex;align-items:center;gap:22px;font-size:14px;color:var(--muted);}
-  .top-right .dest{cursor:pointer;}
-  .btn-book{border:1px solid var(--line);background:#fff;color:var(--navy);padding:9px 18px;border-radius:8px;font-weight:600;cursor:pointer;font-size:14px;}
-  .btn-book:hover{border-color:var(--navy);}
+/* ───── promo strip ───── */
+.promo{background:var(--navy-2);color:#cfd8e3;font-size:13px;text-align:center;padding:7px 16px}
+.promo b{color:#fff;font-weight:700}
 
-  /* ---------- secondary nav ---------- */
-  .subnav{background:var(--navy);color:#dce6ef;}
-  .subnav-inner{display:flex;align-items:center;gap:30px;height:54px;font-size:14px;}
-  .subnav .chip{display:flex;align-items:center;gap:8px;font-weight:600;background:rgba(255,255,255,.1);padding:4px 11px;border-radius:6px;}
-  .subnav .chip .flag{width:20px;height:14px;border-radius:2px;background:linear-gradient(#e30a17 0 100%);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:9px;}
-  .subnav-item{position:relative;cursor:pointer;padding:16px 0;color:#dce6ef;display:flex;align-items:center;gap:6px;}
-  .subnav-item .ch{font-size:10px;opacity:.8;}
-  .subnav-item.active{color:#fff;}
-  .subnav-item.active::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--green);border-radius:2px;}
-  .subnav-item .menu{display:none;position:absolute;top:100%;left:-14px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 12px 30px rgba(0,0,0,.12);min-width:230px;padding:8px 0;z-index:50;}
-  .subnav-item:hover .menu{display:block;}
-  .subnav-item .menu a{display:block;padding:9px 18px;color:var(--ink);font-size:13.5px;}
-  .subnav-item .menu a:hover{background:var(--grey);text-decoration:none;}
+/* ───── main header (UNCHANGED) ───── */
+.hdr{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60}
+.hdr .wrap{display:flex;align-items:center;gap:28px;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:19px;color:var(--ink)}
+.logo .mark{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hdr-link{font-weight:700;font-size:14.5px;color:var(--ink);background:none;border:none;display:flex;align-items:center;gap:6px}
+.hdr-spacer{flex:1}
+.hdr .lang{font-weight:700;font-size:13.5px;color:var(--body)}
+.btn-bookings{border:1.5px solid var(--ink);border-radius:8px;background:#fff;color:var(--ink);font-weight:700;font-size:14px;padding:9px 18px}
+.btn-bookings:hover{background:var(--ink);color:#fff}
+.chev{width:10px;height:10px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);display:inline-block}
 
-  /* ---------- hero ---------- */
-  .hero{position:relative;min-height:430px;display:flex;align-items:flex-end;background-size:cover;background-position:center;
-    background-image:linear-gradient(180deg,rgba(10,20,32,.15),rgba(10,20,32,.65)),url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1600&q=80');}
-  .hero-inner{padding:48px 0 36px;width:100%;}
-  .hero h1{color:#fff;font-size:46px;max-width:760px;text-shadow:0 2px 18px rgba(0,0,0,.25);}
-  .hero .byline{display:flex;align-items:center;gap:12px;margin-top:22px;color:#eaf1f7;}
-  .hero .avatar{width:46px;height:46px;border-radius:50%;background:#cdd8e2;border:2px solid rgba(255,255,255,.6);}
-  .hero .byline .nm{font-weight:600;color:#fff;}
-  .hero .byline .rl{font-size:13px;color:#dbe6f0;}
-  .crumb{margin-top:22px;font-size:13px;color:#dbe6f0;display:flex;align-items:center;gap:8px;}
-  .crumb span{opacity:.7;}
+/* ───── dynamic city item in the main header (no second navbar) ───── */
+.crumb-dd{position:relative}
+.city-pill{display:flex;align-items:center;gap:8px;border:none;background:var(--green-bg);color:var(--green-d);font-size:14px;font-weight:800;padding:9px 16px;border-radius:99px;white-space:nowrap}
+.city-pill:hover{background:#d9f2e8}
+.city-pill .chev{width:7px;height:7px;transition:transform .18s}
+.crumb-dd.open .city-pill .chev{transform:rotate(225deg) translateY(-1px)}
+.dd-panel{position:absolute;top:calc(100% + 8px);left:0;min-width:440px;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:20px 22px;display:none;z-index:70}
+.crumb-dd.open .dd-panel{display:block;animation:dd .16s ease}
+@keyframes dd{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+.dd-label{grid-column:1/-1;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 4px}
+.dd-label + .dd-label{margin-top:14px}
+.dd-panel a{display:flex;align-items:baseline;gap:6px;font-size:14px;color:var(--ink);font-weight:600;padding:6px 8px;border-radius:7px}
+.dd-panel a:hover{background:var(--bg);text-decoration:none;color:var(--green-d)}
+.dd-panel a small{color:var(--muted);font-weight:600;font-size:12px;margin-left:auto;white-space:nowrap}
+.dd-from{color:var(--muted);font-weight:600}
+.dd-all{margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+.dd-all a{color:var(--green-d)!important;font-weight:700!important;padding:2px 0!important}
+.dd-all a:hover{background:none!important;text-decoration:underline!important}
 
-  /* ---------- layout spine ---------- */
-  .layout{display:grid;grid-template-columns:262px 1fr;gap:48px;padding:46px 0 10px;}
-  .sidemenu{position:sticky;top:90px;align-self:start;}
-  .sidemenu a{display:flex;align-items:center;gap:13px;padding:13px 14px;color:var(--ink);font-size:15px;border-bottom:1px solid var(--line);font-weight:500;}
-  .sidemenu a:hover{text-decoration:none;color:var(--navy);}
-  .sidemenu a.active{background:var(--grey);border-radius:30px;border-bottom-color:transparent;}
-  .sidemenu .ic{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:16px;background:#fff;}
-  .content{min-width:0;}
-  .content > p{color:#33414f;margin-bottom:16px;font-size:17px;}
-  .content h2.big{font-size:33px;margin:14px 0 22px;}
+/* ───── hero ───── */
+.hero-crumb{display:flex;align-items:center;gap:9px;font-size:13px;color:#aab7c6;font-weight:600;margin-bottom:22px}
+.hero-crumb a{color:#cfd8e3}
+.hero-crumb a:hover{color:#fff}
+.hero-crumb .sep{color:#5e7088;user-select:none}
+.hero-crumb .here{color:#fff;font-weight:700}
+.hero{position:relative;background:linear-gradient(180deg,#33455e 0%,#2c3a4e 55%,#26475c 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 320px at 85% 110%, rgba(22,177,134,.28), transparent 60%),
+  radial-gradient(700px 260px at 10% -20%, rgba(255,255,255,.10), transparent 60%)}
+.hero-sea{position:absolute;left:0;right:0;bottom:0;height:130px;background:linear-gradient(180deg,rgba(31,116,140,.0),rgba(28,118,138,.55));clip-path:polygon(0 45%,8% 38%,18% 48%,30% 36%,44% 50%,58% 38%,72% 50%,86% 40%,100% 48%,100% 100%,0 100%)}
+.hero .wrap{position:relative;padding-top:58px;padding-bottom:64px}
+.hero h1{color:#fff;font-size:clamp(30px,4.6vw,46px);max-width:760px;letter-spacing:-.01em}
+.byline{display:flex;align-items:center;gap:13px;margin-top:22px}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;flex:none}
+.byline .who{color:#e8edf3;font-size:14px;line-height:1.5}
+.byline .who b{color:#fff;display:block;font-size:15px}
+.hero-meta{margin-top:26px;color:#aab7c6;font-size:13px;display:flex;gap:8px;align-items:center}
+.hero-meta b{color:#dfe6ee;font-weight:700}
 
-  /* ---------- comparison table ---------- */
-  .ctable{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:20px;}
-  .ctable .hbar{background:var(--navy);color:#fff;text-align:center;padding:20px;font-size:15px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center;gap:14px;}
-  .ctable .hbar .pax{background:rgba(255,255,255,.14);padding:6px 14px;border-radius:6px;font-weight:600;font-size:13px;}
-  .crow{display:grid;grid-template-columns:1.6fr .8fr .9fr 1fr 1fr 1.2fr;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);font-size:14.5px;}
-  .crow:last-child{border-bottom:none;}
-  .crow.head{color:var(--muted);font-size:12px;letter-spacing:.5px;font-weight:600;text-transform:uppercase;}
-  .crow.head .ci{display:flex;align-items:center;gap:6px;}
-  .crow:nth-child(even):not(.head){background:#fafbfc;}
-  .opt{display:flex;align-items:center;gap:12px;font-weight:600;}
-  .opt .oic{width:30px;height:30px;border-radius:50%;background:var(--grey);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:15px;}
-  .stars{color:var(--star);font-size:14px;letter-spacing:1px;}
-  .stars .off{color:var(--star-off);}
-  .ctable .act{justify-self:start;}
-  .b-green{background:var(--green);color:#fff;border:none;padding:9px 22px;border-radius:7px;font-weight:600;cursor:pointer;font-size:13.5px;}
-  .b-green:hover{background:var(--green-d);}
-  .b-white{background:#fff;border:1px solid var(--line);color:var(--navy);padding:9px 18px;border-radius:7px;font-weight:600;cursor:pointer;font-size:13.5px;}
-  .b-white:hover{border-color:var(--navy);}
+/* ───── layout ───── */
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:44px;padding:44px 0 10px}
+.sidebar{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:18px;max-height:calc(100vh - 100px);overflow:auto}
+.side-card{border:1px solid var(--line);border-radius:var(--r);background:#fff;padding:8px}
+.side-card .side-title{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 12px 6px}
+.side-nav a{display:flex;align-items:center;gap:11px;padding:11px 12px;border-radius:9px;font-size:14px;font-weight:700;color:var(--body)}
+.side-nav a:hover{background:var(--bg);text-decoration:none}
+.side-nav a.active{background:var(--green-bg);color:var(--green-d)}
+.side-nav .ico{width:26px;height:26px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+.side-nav a.active .ico{background:#fff}
 
-  /* ---------- share ---------- */
-  .share{text-align:center;margin:36px 0;}
-  .share .lbl{font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:16px;}
-  .share .icons{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;}
-  .share .si{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:19px;}
-  .si.mail{background:#e8503a;} .si.fb{background:#1877f2;} .si.wa{background:#25d366;} .si.ms{background:#0084ff;} .si.x{background:#111;}
-  .share .copy{border:1px solid var(--line);background:#fff;color:var(--navy);padding:11px 22px;border-radius:8px;font-weight:600;cursor:pointer;}
+/* ───── article ───── */
+.article > section{margin-bottom:58px}
+.lead p{margin-bottom:16px;max-width:72ch}
+h2.sec{font-size:clamp(22px,3vw,30px);margin-bottom:18px;display:flex;align-items:center;gap:14px;scroll-margin-top:70px}
+h2.sec .badge{width:46px;height:46px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:21px;flex:none}
+h3{font-size:20px;margin:30px 0 12px}
+.article p + p{margin-top:14px}
+.note{font-size:13.5px;color:var(--muted);margin-top:12px}
 
-  /* ---------- transport section ---------- */
-  .tsec{margin:42px 0;scroll-margin-top:90px;}
-  .tsec .shead{display:flex;align-items:flex-start;gap:18px;margin-bottom:18px;}
-  .tsec .shead .bic{width:56px;height:56px;border-radius:50%;background:var(--grey);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:26px;flex:none;}
-  .tsec .shead h2{font-size:31px;}
-  .tsec p{color:#33414f;margin-bottom:14px;}
-  .tsec h3{font-size:22px;margin:24px 0 12px;}
+/* ───── comparison table ───── */
+.cmp{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.cmp-head{background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;gap:14px;padding:15px;font-size:13px;font-weight:700;letter-spacing:.06em}
+.cmp-head select{background:#3b4d66;border:1px solid #51637d;color:#fff;font-weight:700;font-size:13px;padding:7px 10px;border-radius:8px;font-family:inherit}
+.cmp table{width:100%;border-collapse:collapse}
+.cmp th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:800;text-align:left;padding:14px 16px;background:#fafbfc;border-bottom:1px solid var(--line)}
+.cmp td{padding:18px 16px;border-bottom:1px solid var(--line);vertical-align:middle;font-size:15px}
+.cmp tr:last-child td{border-bottom:none}
+.cmp .opt{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--ink)}
+.cmp .opt .ico{width:38px;height:38px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:17px;flex:none}
+.cmp .opt small{display:block;font-weight:600;color:var(--muted);font-size:12.5px}
+.price{font-weight:800;color:var(--ink);font-size:16px}
+.stars{color:var(--star);letter-spacing:2px;font-size:14px;white-space:nowrap}
+.stars .off{color:#d9e0e7}
+.btn{display:inline-block;background:var(--green);color:#fff;font-weight:800;font-size:14px;padding:11px 26px;border-radius:9px;border:none;text-align:center}
+.btn:hover{background:var(--green-d);text-decoration:none;color:#fff}
+.btn-ghost{display:inline-block;border:1.5px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:13.5px;padding:10px 20px;border-radius:9px}
+.btn-ghost:hover{border-color:var(--ink);text-decoration:none}
+.row-hl{background:linear-gradient(90deg,rgba(22,177,134,.06),transparent 70%)}
+.tag-best{display:inline-block;background:var(--green-bg);color:var(--green-d);font-size:10.5px;font-weight:800;letter-spacing:.06em;padding:3px 8px;border-radius:99px;margin-left:8px;vertical-align:2px}
 
-  .statcard{border:1px solid var(--line);border-radius:var(--radius);display:grid;grid-template-columns:1.4fr 1fr;margin:18px 0;overflow:hidden;}
-  .statcard .left{padding:24px 26px;border-right:1px solid var(--line);}
-  .statcard .metrics{display:flex;gap:48px;}
-  .statcard .metrics .k{font-size:12px;letter-spacing:.5px;color:var(--muted);text-transform:uppercase;margin-bottom:4px;}
-  .statcard .metrics .v{font-size:36px;font-weight:700;color:var(--navy);line-height:1;}
-  .statcard .note{margin-top:16px;color:var(--muted);font-size:14.5px;}
-  .statcard .right{padding:24px 26px;display:flex;flex-direction:column;justify-content:center;gap:14px;}
-  .statcard .rrow{display:flex;align-items:center;justify-content:space-between;}
-  .statcard .rrow .rk{font-size:12px;letter-spacing:.5px;color:var(--muted);text-transform:uppercase;}
-  .infoline{border-top:1px solid var(--line);padding:14px 26px;color:var(--muted);font-size:14px;display:flex;align-items:center;gap:10px;grid-column:1/-1;}
-  .infoline .i{width:22px;height:22px;border-radius:50%;background:var(--grey);display:inline-flex;align-items:center;justify-content:center;font-size:12px;color:var(--navy);font-style:italic;font-weight:700;}
+/* ───── share strip ───── */
+.share{display:flex;align-items:center;gap:12px;background:var(--bg);border-radius:var(--r);padding:14px 18px;font-size:13.5px;color:var(--muted);font-weight:600}
+.share .dots{margin-left:auto;display:flex;gap:8px}
+.share .dot{width:32px;height:32px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--body)}
 
-  .conv-h{display:flex;align-items:center;gap:14px;margin:24px 0 10px;}
-  .conv-h h3{margin:0;}
+/* ───── stat band + ratings ───── */
+.statband{display:grid;grid-template-columns:1.15fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:24px 0}
+.statband .left{padding:22px 26px;border-right:1px solid var(--line)}
+.kpis{display:flex;gap:40px}
+.kpi small{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.kpi b{font-size:30px;color:var(--ink);font-weight:800}
+.statband .left p{font-size:13px;color:var(--muted);margin-top:12px}
+.rates{padding:22px 26px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.rate{display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--body)}
+.infoline{display:flex;gap:10px;align-items:flex-start;background:var(--green-bg);border-radius:var(--r-sm);padding:13px 16px;font-size:14px;color:#14543f;font-weight:600;margin:18px 0}
+.infoline .i{flex:none;width:20px;height:20px;border-radius:50%;background:var(--green);color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center;font-weight:800}
 
-  .timetables{margin:18px 0;}
-  .tt-row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);}
-  .tt-row .tic{width:42px;height:42px;border-radius:50%;background:var(--grey);display:flex;align-items:center;justify-content:center;color:var(--navy);}
-  .tt-row .tt-name{font-weight:600;color:var(--navy);}
-  .tt-row .tt-sub{font-size:13px;}
+/* ───── tips accordion ───── */
+details.tips{border:1px solid var(--line);border-radius:var(--r);margin-top:22px;background:#fff}
+details.tips summary{list-style:none;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;font-weight:800;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+details.tips summary::-webkit-details-marker{display:none}
+details.tips summary .chev{transition:transform .2s}
+details.tips[open] summary .chev{transform:rotate(225deg)}
+details.tips ul{padding:0 20px 18px;list-style:none}
+details.tips li{display:flex;gap:11px;padding:8px 0;font-size:15px}
+details.tips li::before{content:"✓";flex:none;width:20px;height:20px;border-radius:50%;background:var(--green-bg);color:var(--green-d);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:3px}
 
-  .tips{border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;margin:20px 0;}
-  .tips .th{display:flex;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;font-weight:600;margin-bottom:14px;}
-  .tips ul{list-style:none;}
-  .tips li{display:flex;align-items:flex-start;gap:12px;padding:9px 0;color:#33414f;font-size:15px;}
-  .tips li .ck{width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;flex:none;margin-top:2px;}
+/* ───── timetable links ───── */
+.tt{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+.tt a{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px 16px;font-size:13.5px;font-weight:700;color:var(--ink)}
+.tt a:hover{border-color:var(--green);text-decoration:none;color:var(--green-d)}
 
-  /* ---------- booking widget ---------- */
-  .bwidget{background:var(--navy);border-radius:14px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;margin:34px 0;color:#fff;}
-  .bwidget .bleft{padding:34px 32px;display:flex;flex-direction:column;justify-content:center;background-size:cover;background-position:center;background-image:linear-gradient(120deg,rgba(22,41,61,.92),rgba(22,41,61,.55)),url('https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=900&q=80');}
-  .bwidget .brand{display:flex;align-items:center;gap:10px;font-weight:700;margin-bottom:8px;}
-  .bwidget .brand .mk{width:30px;height:30px;border-radius:50%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;}
-  .bwidget .tp{display:flex;align-items:center;gap:8px;background:#fff;color:var(--ink);border-radius:8px;padding:6px 12px;width:max-content;font-size:13px;margin:6px 0 16px;}
-  .bwidget .tp .stars{color:#00b67a;}
-  .bwidget .bleft h3{color:#fff;font-size:24px;line-height:1.25;}
-  .bwidget .bleft .lm{color:#cfe9df;margin-top:14px;font-weight:600;}
-  .bwidget .bright{padding:28px 30px;background:var(--navy-2);}
-  .toggle{display:flex;background:rgba(255,255,255,.12);border-radius:30px;padding:4px;margin-bottom:16px;}
-  .toggle button{flex:1;border:none;background:transparent;color:#cfe0ee;padding:10px;border-radius:26px;font-weight:600;cursor:pointer;font-size:14px;}
-  .toggle button.on{background:#fff;color:var(--navy);}
-  .field{background:#fff;border-radius:8px;display:flex;align-items:center;gap:10px;padding:13px 14px;margin-bottom:10px;color:var(--muted);font-size:14px;}
-  .field .fi{color:var(--navy);}
-  .row2{display:flex;gap:14px;margin:6px 0 14px;}
-  .row2 .col{flex:1;}
-  .row2 .lab{font-weight:600;color:#fff;font-size:14px;margin-bottom:8px;}
-  .stepper{background:#fff;border-radius:8px;display:flex;align-items:center;justify-content:space-between;padding:8px 12px;}
-  .stepper button{width:28px;height:28px;border:none;background:var(--grey);border-radius:6px;font-size:16px;cursor:pointer;color:var(--navy);}
-  .b-cta{width:100%;background:var(--green);color:#fff;border:none;padding:15px;border-radius:9px;font-weight:700;font-size:15px;cursor:pointer;}
-  .b-cta:hover{background:var(--green-d);}
+/* ───── booking banner ───── */
+.book{display:grid;grid-template-columns:1.1fr 1fr;background:var(--navy);border-radius:16px;overflow:hidden;color:#fff;box-shadow:var(--shadow)}
+.book .pitch{padding:34px 36px;background:
+  radial-gradient(560px 220px at 0% 110%, rgba(22,177,134,.35), transparent 60%), var(--navy)}
+.book .pitch .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px}
+.book .pitch .brand .mark{width:26px;height:26px;border-radius:50%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:13px}
+.book .pitch .stars{margin:10px 0 2px}
+.book .pitch .rev{font-size:12.5px;color:#aab7c6}
+.book .pitch h3{color:#fff;font-size:22px;margin:18px 0 10px;line-height:1.35}
+.book .pitch a{color:#7fe3c4;font-weight:700;font-size:14px}
+.book .form{background:#33455e;padding:26px 28px}
+.tabs{display:flex;background:#2a3a50;border-radius:99px;padding:4px;margin-bottom:16px}
+.tabs button{flex:1;border:none;border-radius:99px;padding:9px;font-weight:800;font-size:13px;color:#aab7c6;background:transparent}
+.tabs button.on{background:#fff;color:var(--ink)}
+.field{display:flex;align-items:center;gap:10px;background:#fff;border-radius:10px;padding:12px 14px;font-size:14px;color:var(--body);margin-bottom:10px;font-weight:600}
+.field span{color:var(--muted)}
+.pl{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.pl label{font-size:12px;font-weight:800;letter-spacing:.05em;color:#c6d0db;display:block;margin-bottom:6px}
+.step{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:10px;padding:8px 10px;color:var(--ink);font-weight:800}
+.step button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:#fff;font-size:16px;color:var(--body)}
+.book .btn{width:100%;padding:14px;font-size:15px}
 
-  /* ---------- vehicle cards ---------- */
-  .vehicles{background:var(--grey);border-radius:14px;padding:36px 32px;margin:34px 0;}
-  .vehicles .vh{display:flex;align-items:center;gap:14px;margin-bottom:8px;}
-  .vehicles .vh .vic{width:54px;height:54px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:24px;}
-  .vehicles .vh h2{font-size:30px;}
-  .vehicles .vsub{color:var(--muted);margin-bottom:26px;max-width:620px;}
-  .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:#fff;border-radius:12px;padding:8px;}
-  .vcard{padding:24px 18px;text-align:center;border-right:1px solid var(--line);}
-  .vcard:last-child{border-right:none;}
-  .vcard .vimg{height:90px;display:flex;align-items:center;justify-content:center;font-size:54px;color:var(--navy);margin-bottom:12px;}
-  .vcard .vname{font-weight:700;color:var(--navy);font-size:17px;margin-bottom:14px;}
-  .vcard .vprice{color:var(--navy);font-size:14px;}
-  .vcard .vprice b{font-size:18px;}
-  .vcard .vmodel{color:var(--muted);font-size:12.5px;margin-top:10px;}
-  .vehicles .vcta{display:block;margin:26px auto 0;background:var(--green);color:#fff;border:none;padding:15px 32px;border-radius:9px;font-weight:700;font-size:15px;cursor:pointer;}
-  .vehicles .vcta:hover{background:var(--green-d);}
+/* ───── vehicles ───── */
+.veh{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.vcard{border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;text-align:center;background:#fff;transition:box-shadow .2s, transform .2s}
+.vcard:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.vcard .vico{font-size:34px;margin-bottom:10px}
+.vcard h4{font-size:16px;margin-bottom:2px}
+.vcard .cap{font-size:12.5px;color:var(--muted);font-weight:600}
+.vcard .vprice{font-size:26px;font-weight:800;color:var(--ink);margin:12px 0 2px}
+.vcard .per{font-size:12px;color:var(--muted);font-weight:600}
+.vcard .models{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
 
-  /* ---------- faq ---------- */
-  .faq{margin:46px 0;}
-  .faq h2{font-size:33px;margin-bottom:24px;}
-  .fitem{border-bottom:1px solid var(--line);}
-  .fq{display:flex;align-items:center;justify-content:space-between;padding:20px 0;cursor:pointer;font-weight:600;color:var(--navy);font-size:18px;gap:20px;}
-  .fq .fch{color:var(--muted);font-size:14px;transition:transform .2s;}
-  .fa{padding:0 0 20px;color:#33414f;display:none;}
-  .fitem.open .fa{display:block;}
-  .fitem.open .fch{transform:rotate(180deg);}
+/* ───── FAQ ───── */
+details.faq{border-bottom:1px solid var(--line)}
+details.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:19px 4px;font-weight:800;font-size:16.5px;color:var(--ink);cursor:pointer}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary .chev{flex:none;transition:transform .2s;color:var(--muted)}
+details.faq[open] summary .chev{transform:rotate(225deg)}
+details.faq .a{padding:0 4px 20px;max-width:72ch}
 
-  /* ---------- author ---------- */
-  .author{background:var(--grey);border-radius:12px;padding:26px 28px;display:flex;gap:18px;align-items:flex-start;margin:30px 0;}
-  .author .aav{width:62px;height:62px;border-radius:50%;background:#cdd8e2;flex:none;}
-  .author .an{font-weight:700;color:var(--navy);font-size:18px;margin-bottom:4px;}
-  .author p{color:var(--muted);font-size:14.5px;}
+/* ───── author / posts / routes grid ───── */
+.author{display:flex;gap:16px;background:var(--bg);border-radius:var(--r);padding:24px}
+.author .avatar{width:52px;height:52px}
+.author b{color:var(--ink);display:block;margin-bottom:4px;font-size:16px}
+.posts{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:22px}
+.post{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+.post:hover{box-shadow:var(--shadow);text-decoration:none}
+.post .ph{height:120px;background:linear-gradient(135deg,#37506b,#1c7d9a)}
+.post:nth-child(2) .ph{background:linear-gradient(135deg,#1d8a74,#2c3a4e)}
+.post:nth-child(3) .ph{background:linear-gradient(135deg,#b07a3c,#2c3a4e)}
+.post:nth-child(4) .ph{background:linear-gradient(135deg,#3a6ea5,#16b186)}
+.post p{padding:15px 17px;font-weight:700;color:var(--ink);font-size:14.5px;line-height:1.5}
+.routes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.rcard{border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;background:#fff;display:block}
+.rcard:hover{box-shadow:var(--shadow);text-decoration:none;border-color:#d7dde4}
+.rcard .from{font-size:12px;color:var(--muted);font-weight:700}
+.rcard .to{font-weight:800;color:var(--ink);font-size:15px;margin:2px 0 6px}
+.rcard .meta{font-size:12.5px;color:var(--muted);font-weight:600}
+.rcard .meta b{color:var(--green-d)}
 
-  /* ---------- posts ---------- */
-  .posts{margin:50px 0;}
-  .posts h2{text-align:center;font-size:33px;margin-bottom:30px;}
-  .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
-  .pcard img,.pcard .pimg{width:100%;height:210px;border-radius:10px;object-fit:cover;background-size:cover;background-position:center;display:block;}
-  .pcard .pt{font-weight:600;color:var(--navy);margin-top:12px;font-size:17px;}
+/* ───── footer ───── */
+.dest-toggle{border-top:1px solid var(--line);text-align:center;padding:26px 0}
+.dest-toggle button{background:none;border:none;font-weight:800;font-size:17px;color:var(--ink);display:inline-flex;align-items:center;gap:10px}
+.dest-list{display:none;max-width:var(--maxw);margin:6px auto 26px;padding:0 24px;columns:5;gap:24px}
+.dest-list.open{display:block}
+.dest-list a{display:block;font-size:13.5px;color:var(--body);font-weight:600;padding:4px 0}
+footer{background:var(--navy-2);color:#9fb0c2;margin-top:0}
+.fgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;padding:52px 0 34px}
+.fgrid h5{color:#fff;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px}
+.fgrid a{display:block;color:#9fb0c2;font-size:13.5px;padding:4px 0}
+.fgrid a:hover{color:#fff;text-decoration:none}
+.fbottom{border-top:1px solid #344459;padding:20px 0;display:flex;justify-content:space-between;font-size:12.5px}
+.flogo{display:flex;align-items:center;gap:8px;color:#fff;font-weight:800;font-size:16px;margin-bottom:14px}
+.flogo .mark{width:24px;height:24px;border-radius:50%;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;font-size:12px}
 
-  /* ---------- INTERLINK BLOCK (the important one) ---------- */
-  .interlink{margin:54px 0;}
-  .interlink h2{text-align:center;font-size:33px;margin-bottom:10px;}
-  .interlink .sub{text-align:center;color:var(--muted);margin-bottom:30px;}
-  .ilgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  .ilcard{display:flex;align-items:center;gap:14px;padding:14px;border:1px solid var(--line);border-radius:12px;background:#fff;transition:.15s;}
-  .ilcard:hover{border-color:var(--green);box-shadow:0 6px 18px rgba(0,0,0,.06);text-decoration:none;transform:translateY(-2px);}
-  .ilcard .ilimg{width:70px;height:62px;border-radius:8px;flex:none;background-size:cover;background-position:center;background:#cdd8e2;}
-  .ilcard .ilt{font-weight:600;color:var(--navy);font-size:14.5px;line-height:1.35;}
-  .ilcard .ilt small{display:block;color:var(--muted);font-weight:500;}
-
-  /* ---------- worldwide ---------- */
-  .worldwide{background:var(--grey);text-align:center;padding:34px;margin-top:30px;}
-  .worldwide .wctrl{font-size:24px;font-weight:700;color:var(--navy);cursor:pointer;display:inline-flex;align-items:center;gap:12px;}
-
-  /* ---------- footer ---------- */
-  footer{background:var(--navy);color:#b9c6d3;padding:50px 0 30px;}
-  .fgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;}
-  footer h4{color:#fff;font-size:14px;margin-bottom:14px;}
-  footer ul{list-style:none;}
-  footer li{padding:5px 0;font-size:13.5px;}
-  footer a{color:#b9c6d3;}
-  .fbottom{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-
-  /* ---------- modal ---------- */
-  .overlay{position:fixed;inset:0;background:rgba(15,25,38,.55);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;}
-  .overlay.show{display:flex;}
-  .modal{background:#fff;border-radius:14px;padding:28px;width:100%;max-width:430px;position:relative;}
-  .modal h3{font-size:22px;text-align:center;margin-bottom:20px;}
-  .modal .x{position:absolute;top:18px;right:20px;font-size:22px;color:var(--muted);cursor:pointer;border:none;background:none;}
-  .modal .field{border:1px solid var(--line);}
-  .modal .b-cta{margin-top:6px;}
-
-  .ribbon{background:var(--green);color:#fff;text-align:center;padding:8px;font-size:13px;font-weight:600;}
-
-  @media(max-width:920px){
-    .layout{grid-template-columns:1fr;}
-    .sidemenu{display:none;}
-    .hero h1{font-size:32px;}
-    .bwidget,.vgrid,.ilgrid,.pgrid,.statcard{grid-template-columns:1fr;}
-    .fgrid{grid-template-columns:repeat(2,1fr);}
-    .crow{grid-template-columns:1.4fr .8fr .9fr;grid-auto-rows:auto;font-size:13px;}
-    .crow .ci:nth-child(4),.crow .ci:nth-child(5),.crow div:nth-child(4),.crow div:nth-child(5),.crow .act{display:none;}
-    .subnav-inner{gap:16px;overflow-x:auto;}
-  }
+/* ───── responsive ───── */
+@media (max-width:1020px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;max-height:none;flex-direction:row;flex-wrap:wrap;order:2}
+  .side-card{flex:1 1 280px}
+  .book{grid-template-columns:1fr}
+  .veh,.routes-grid{grid-template-columns:1fr 1fr}
+  .dest-list{columns:3}
+  .statband{grid-template-columns:1fr}
+  .statband .left{border-right:none;border-bottom:1px solid var(--line)}
+}
+@media (max-width:640px){
+  .hdr .wrap{gap:14px}
+  .hdr .lang{display:none}
+  .city-pill{font-size:13px;padding:8px 13px}
+  .dd-panel{position:fixed;left:12px;right:12px;top:62px;min-width:0;max-height:70vh;overflow:auto}
+  .dd-grid{grid-template-columns:1fr}
+  .cmp{overflow-x:auto}
+  .cmp table{min-width:640px}
+  .posts,.veh,.routes-grid{grid-template-columns:1fr}
+  .kpis{gap:24px}.kpi b{font-size:24px}
+  .dest-list{columns:2}
+  .fgrid{grid-template-columns:1fr 1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
 
-<div class="ribbon">⚡ HolidayCab — fixed-price airport transfers in 374 destinations. Book a trusted English-speaking driver.</div>
+<div class="promo">⚡ <b>HolidayCab</b> — fixed-price airport transfers in 374 destinations. Book a trusted English-speaking driver.</div>
 
-<!-- HEADER -->
-<header class="top">
-  <div class="wrap top-inner">
-    <div class="logo"><span class="mark">◎</span> HolidayCab</div>
-    <div class="top-right">
-      <span class="dest">Destination ▾</span>
-      <span>EN</span>
-      <button class="btn-book">My Bookings</button>
+<!-- ═══ MAIN HEADER — with dynamic city item (injected on city pages only) ═══ -->
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#"><span class="mark">◎</span>HolidayCab</a>
+    <button class="hdr-link">Destination <span class="chev"></span></button>
+
+    <div class="crumb-dd" data-dd id="cityMenu">
+      <button class="city-pill" aria-expanded="false">📍 Antalya <span class="chev"></span></button>
+      <div class="dd-panel">
+        <div class="dd-grid">
+          <p class="dd-label">Airport information</p>
+          <a href="#">Antalya Airport (AYT)</a>
+          <a href="#">Arrivals</a>
+          <a href="#">Departures</a>
+          <a href="#">Terminal maps</a>
+          <p class="dd-label">Transportation</p>
+          <a href="#">Antalya Airport transfer</a>
+          <a href="#">Antalya Airport taxi</a>
+          <a href="#" style="color:var(--green-d)">Airport to city · you are here</a>
+          <a href="#">Airport shuttle</a>
+          <p class="dd-label">Routes from AYT</p>
+          <a href="#"><span class="dd-from">→</span> Side <small>65 km · from €41</small></a>
+          <a href="#"><span class="dd-from">→</span> Belek <small>40 km · from €38</small></a>
+          <a href="#"><span class="dd-from">→</span> Kemer <small>55 km · from €45</small></a>
+          <a href="#"><span class="dd-from">→</span> Lara <small>12 km · from €20</small></a>
+          <p class="dd-label">Travel guides</p>
+          <a href="#">Taxi in Antalya — prices & tips</a>
+          <a href="#">Antalya Airport to Side guide</a>
+        </div>
+        <div class="dd-all"><a href="#">All Antalya routes & guides →</a></div>
+      </div>
     </div>
+
+    <div class="hdr-spacer"></div>
+    <span class="lang">EN</span>
+    <button class="btn-bookings">My Bookings</button>
   </div>
 </header>
 
-<!-- SECONDARY NAV -->
-<nav class="subnav">
-  <div class="wrap subnav-inner">
-    <span class="chip"><span class="flag">★</span> AYT</span>
-    <div class="subnav-item">Airport Information <span class="ch">▾</span>
-      <div class="menu">
-        <a href="#">Antalya Airport</a>
-        <a href="#">Arrivals</a>
-        <a href="#">Departures</a>
-      </div>
-    </div>
-    <div class="subnav-item active">Transportation <span class="ch">▾</span>
-      <div class="menu">
-        <a href="#">Airport Transfer</a>
-        <a href="#">Airport Taxi</a>
-        <a href="#">Airport to City</a>
-      </div>
-    </div>
-    <div class="subnav-item">Travel Guides <span class="ch">▾</span>
-      <div class="menu">
-        <a href="#">Taxi in Antalya</a>
-        <a href="#">Airport to Side</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-inner">
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <div class="hero-sea" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-crumb"><a href="#">Home</a><span class="sep">›</span><a href="#">Antalya</a><span class="sep">›</span><span class="here">Airport to city</span></div>
     <h1>How to get from Antalya Airport to Antalya</h1>
     <div class="byline">
-      <div class="avatar"></div>
-      <div>
-        <div class="nm">HolidayCab Editorial</div>
-        <div class="rl">Travel team &middot; Updated June 2025</div>
-      </div>
+      <div class="avatar">HC</div>
+      <div class="who"><b>HolidayCab Editorial</b>Travel team · Updated June 2026</div>
     </div>
-    <div class="crumb">Home <span>›</span> Antalya <span>›</span> Airport to city</div>
+    <div class="hero-meta"><b>AYT</b> · 15 km from city centre · <b>5</b> transport options compared</div>
   </div>
-</section>
+</div>
 
-<!-- LAYOUT -->
-<div class="wrap layout">
+<div class="wrap">
+<div class="layout">
 
-  <!-- LEFT MENU -->
-  <aside class="sidemenu">
-    <a href="#compare" class="active"><span class="ic">⊟</span> Transport Comparison</a>
-    <a href="#taxi"><span class="ic">🚕</span> Taxi</a>
-    <a href="#tram"><span class="ic">🚊</span> Tram</a>
-    <a href="#shuttle"><span class="ic">🚌</span> Shuttle Bus</a>
-    <a href="#bus"><span class="ic">🚐</span> Local Bus</a>
-    <a href="#transfer"><span class="ic">◎</span> Private Transfer</a>
-    <a href="#info"><span class="ic">ⓘ</span> Practical Information</a>
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="sidebar">
+    <div class="side-card">
+      <p class="side-title">On this page</p>
+      <nav class="side-nav" id="sideNav">
+        <a href="#compare" class="active"><span class="ico">⊟</span>Transport comparison</a>
+        <a href="#taxi"><span class="ico">🚕</span>Taxi</a>
+        <a href="#tram"><span class="ico">🚊</span>Tram</a>
+        <a href="#shuttle"><span class="ico">🚌</span>Shuttle bus</a>
+        <a href="#bus"><span class="ico">🚐</span>Local bus</a>
+        <a href="#transfer"><span class="ico">◎</span>Private transfer</a>
+        <a href="#info"><span class="ico">ⓘ</span>Practical information</a>
+      </nav>
+    </div>
   </aside>
 
-  <!-- CONTENT -->
-  <main class="content">
-    <p>Antalya Airport sits around 15&nbsp;km east of the city center, and there are five options available when traveling between the two. You can take your pick between a <strong>private airport transfer, an Antalya Airport taxi, tram, shuttle bus, or local bus</strong>. Getting a <a href="#transfer">HolidayCab airport transfer</a> is the most comfortable and timely option, as you'll be assured of door-to-door service no matter what time you arrive.</p>
-    <p>Taking the tram is also convenient and significantly cheaper, running frequently from Antalya Airport to the city center. While the tram is great if you land during the day, it's not viable for anyone arriving in the early hours or late into the night.</p>
-    <p>Another alternative is to catch the airport shuttle or the public bus. These are among the most budget-friendly ways to travel, and though departures are regular, you may face a wait depending on when you arrive.</p>
+  <!-- ═══ ARTICLE ═══ -->
+  <main class="article">
 
-    <!-- COMPARISON TABLE -->
-    <h2 class="big" id="compare">5 ways to get from Antalya Airport to city center</h2>
-    <div class="ctable">
-      <div class="hbar">PRICE FOR <span class="pax">2 PASSENGERS ▾</span></div>
-      <div class="crow head">
-        <div>Option</div><div class="ci">💲 Price</div><div class="ci">⏱ Time</div><div class="ci">📅 Availability</div><div class="ci">★ Convenience</div><div></div>
-      </div>
-      <div class="crow">
-        <div class="opt"><span class="oic">◎</span> HolidayCab Private Transfer</div>
-        <div>€23</div><div>25min</div><div>24/7</div>
-        <div class="stars">★★★★★</div>
-        <div class="act"><button class="b-green" onclick="openModal()">Book</button></div>
-      </div>
-      <div class="crow">
-        <div class="opt"><span class="oic">🚕</span> Taxi</div>
-        <div>€12.30</div><div>25min</div><div>24/7</div>
-        <div class="stars">★★★★<span class="off">★</span></div>
-        <div class="act"><button class="b-green" onclick="openModal()">Book</button></div>
-      </div>
-      <div class="crow">
-        <div class="opt"><span class="oic">🚊</span> Tram</div>
-        <div>€1.60</div><div>40min</div><div>06:00–00:00</div>
-        <div class="stars">★★★★<span class="off">★</span></div>
-        <div class="act"><button class="b-white" onclick="jump('tram')">Read more</button></div>
-      </div>
-      <div class="crow">
-        <div class="opt"><span class="oic">🚌</span> Shuttle Bus</div>
-        <div>€6.60</div><div>45min</div><div>—</div>
-        <div class="stars">★★★<span class="off">★★</span></div>
-        <div class="act"><button class="b-white" onclick="jump('shuttle')">Read more</button></div>
-      </div>
-      <div class="crow">
-        <div class="opt"><span class="oic">🚐</span> Local Bus</div>
-        <div>€2.20</div><div>45min</div><div>06:30–05:00</div>
-        <div class="stars">★★★<span class="off">★★</span></div>
-        <div class="act"><button class="b-white" onclick="jump('bus')">Read more</button></div>
-      </div>
-    </div>
+    <section class="lead">
+      <p>Antalya Airport sits around 15 km east of the city center, and there are five options available when traveling between the two. You can take your pick between a <strong>private airport transfer, an Antalya Airport taxi, tram, shuttle bus, or local bus</strong>. Getting a <a href="#transfer">HolidayCab airport transfer</a> is the most comfortable and timely option, as you'll be assured of door-to-door service no matter what time you arrive.</p>
+      <p>Taking the tram is also convenient and significantly cheaper, running frequently from Antalya Airport to the city center. While the tram is great if you land during the day, it's not viable for anyone arriving in the early hours or late into the night.</p>
+      <p>Another alternative is to catch the airport shuttle or the public bus. These are among the most budget-friendly ways to travel, and though departures are regular, you may face a wait depending on when you arrive.</p>
+    </section>
 
-    <!-- SHARE -->
-    <div class="share">
-      <div class="lbl">Save the article for later or share it with friends</div>
-      <div class="icons">
-        <span class="si mail">✉</span><span class="si fb">f</span><span class="si wa">✆</span><span class="si ms">◉</span><span class="si x">✕</span>
-        <button class="copy">Copy Link</button>
+    <section id="compare">
+      <h2 class="sec">5 ways to get from Antalya Airport to city center</h2>
+      <div class="cmp">
+        <div class="cmp-head">PRICE FOR
+          <select id="pax" aria-label="Number of passengers">
+            <option value="1">1 PASSENGER</option><option value="2" selected>2 PASSENGERS</option>
+            <option value="3">3 PASSENGERS</option><option value="4">4 PASSENGERS</option>
+            <option value="6">6 PASSENGERS</option><option value="8">8 PASSENGERS</option>
+            <option value="12">12 PASSENGERS</option>
+          </select>
+        </div>
+        <table>
+          <thead><tr><th>Option</th><th>Price</th><th>Time</th><th>Availability</th><th>Convenience</th><th></th></tr></thead>
+          <tbody>
+            <tr class="row-hl">
+              <td><div class="opt"><span class="ico">◎</span><div>HolidayCab Private Transfer<span class="tag-best">BEST</span><small>Door-to-door, meet & greet</small></div></div></td>
+              <td class="price" id="p-transfer">€23</td><td>25min</td><td>24/7</td>
+              <td><span class="stars">★★★★★</span></td>
+              <td><a class="btn" href="#transfer">Book</a></td>
+            </tr>
+            <tr>
+              <td><div class="opt"><span class="ico">🚕</span><div>Taxi<small>Metered, from the rank</small></div></div></td>
+              <td class="price" id="p-taxi">€12.30</td><td>25min</td><td>24/7</td>
+              <td><span class="stars">★★★★<span class="off">★</span></span></td>
+              <td><a class="btn" href="#taxi">Book</a></td>
+            </tr>
+            <tr>
+              <td><div class="opt"><span class="ico">🚊</span><div>Tram<small>AntRay line, every 15 min</small></div></div></td>
+              <td class="price" id="p-tram">€1.60</td><td>40min</td><td>06:00–00:00</td>
+              <td><span class="stars">★★★★<span class="off">★</span></span></td>
+              <td><a class="btn-ghost" href="#tram">Read more</a></td>
+            </tr>
+            <tr>
+              <td><div class="opt"><span class="ico">🚌</span><div>Shuttle bus<small>Havas, after domestic arrivals</small></div></div></td>
+              <td class="price" id="p-shuttle">€6.60</td><td>45min</td><td>—</td>
+              <td><span class="stars">★★★<span class="off">★★</span></span></td>
+              <td><a class="btn-ghost" href="#shuttle">Read more</a></td>
+            </tr>
+            <tr>
+              <td><div class="opt"><span class="ico">🚐</span><div>Local bus<small>Lines 400 / 600 / 800</small></div></div></td>
+              <td class="price" id="p-bus">€2.20</td><td>45min</td><td>06:30–05:00</td>
+              <td><span class="stars">★★★<span class="off">★★</span></span></td>
+              <td><a class="btn-ghost" href="#bus">Read more</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-
-    <!-- TAXI -->
-    <section class="tsec" id="taxi">
-      <div class="shead"><span class="bic">🚕</span><h2>How to get from Antalya Airport to Antalya city by taxi</h2></div>
+      <div class="share" style="margin-top:22px">Save the article for later or share it with friends
+        <div class="dots"><span class="dot">✉</span><span class="dot">f</span><span class="dot">✆</span><span class="dot">◉</span><span class="dot">✕</span></div>
+      </div>
+    </section>
+    <!-- ═══ TAXI ═══ -->
+    <section id="taxi">
+      <h2 class="sec"><span class="badge">🚕</span>How to get from Antalya Airport to Antalya city by taxi</h2>
       <p>Getting a <strong>taxi from Antalya Airport to the city center</strong> is a convenient and comfortable way to travel. When you opt for an Antalya Airport taxi, you'll be dropped at the door of your hotel without figuring out public transport timetables or dragging your luggage around.</p>
       <p>Taxis serve the airport 24 hours a day, so you won't worry about getting a ride even if you arrive late. On average, the drive takes about 25 minutes.</p>
       <h3>Cost of a taxi from Antalya Airport to the city</h3>
       <p>The cost depends on the distance to your specific destination, as cabs are metered. On average, the ride totals around <strong>€12.30 (TRY 461)</strong>, regardless of the time of day. That said, many drivers offer set rates that can be significantly higher — it's best to only travel with drivers who agree to turn on the meter.</p>
-      <div class="statcard">
+      <div class="statband">
         <div class="left">
-          <div class="metrics">
-            <div><div class="k">Cost</div><div class="v">€12.30</div></div>
-            <div><div class="k">Trip Duration</div><div class="v">25 Min.</div></div>
+          <div class="kpis">
+            <div class="kpi"><small>Cost</small><b>€12.30</b></div>
+            <div class="kpi"><small>Trip duration</small><b>25 Min.</b></div>
           </div>
-          <div class="note">*Rates may vary in heavy traffic.</div>
+          <p>*Rates may vary in heavy traffic.</p>
         </div>
-        <div class="right">
-          <div class="rrow"><span class="rk">Convenience</span><span class="stars">★★★★<span class="off">★</span></span></div>
-          <div class="rrow"><span class="rk">Safety</span><span class="stars">★★★★<span class="off">★</span></span></div>
-          <div class="rrow"><span class="rk">Value for Money</span><span class="stars">★★★★<span class="off">★</span></span></div>
+        <div class="rates">
+          <div class="rate">Convenience <span class="stars">★★★★★</span></div>
+          <div class="rate">Safety <span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rate">Value for money <span class="stars">★★★★<span class="off">★</span></span></div>
         </div>
-        <div class="infoline"><span class="i">i</span> Taxis are available 24/7 at Antalya Airport (AYT).</div>
       </div>
+      <div class="infoline"><span class="i">i</span>Taxis are available 24/7 at Antalya Airport (AYT).</div>
       <h3>Where do I get a taxi from?</h3>
       <p>All three terminals at Antalya Airport have a designated taxi rank right outside the Arrivals Hall. Follow the transport signs out of your terminal and join the queue at the rank outside.</p>
-      <div class="conv-h"><h3>Convenience</h3><span class="stars">★★★★<span class="off">★</span></span></div>
+      <h3>Convenience</h3>
       <p>Taking a taxi is typically a quick, hassle-free way to get around. Because they service the airport day and night, you'll have no problem getting a ride. Queues can form if many flights land at once, so you may sometimes face a wait.</p>
-      <div class="tips">
-        <div class="th">Useful Tips <span>▲</span></div>
+      <details class="tips" open>
+        <summary>Useful tips <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> Although some taxis accept card, ask your driver before starting the trip.</li>
-          <li><span class="ck">✓</span> Always ensure the meter is reset at the beginning of a ride to avoid overcharging.</li>
-          <li><span class="ck">✓</span> Only accept a ride with drivers who agree to use the meter rather than a fixed fare.</li>
-          <li><span class="ck">✓</span> Use a maps app to preview the most efficient route; some drivers take longer alternatives.</li>
+          <li>Although some taxis accept card, ask your driver before starting the trip.</li>
+          <li>Always ensure the meter is reset at the beginning of a ride to avoid overcharging.</li>
+          <li>Only accept a ride with drivers who agree to use the meter rather than a fixed fare.</li>
+          <li>Use a maps app to preview the most efficient route; some drivers take longer alternatives.</li>
         </ul>
+      </details>
+    </section>
+
+    <!-- ═══ BOOKING BANNER ═══ -->
+    <section class="book" aria-label="Book a transfer">
+      <div class="pitch">
+        <div class="brand"><span class="mark">◎</span>HolidayCab</div>
+        <div class="stars">★★★★★</div>
+        <div class="rev">4,824 reviews</div>
+        <h3>Book a trusted, English-speaking driver to pick you up at the same price as a regular taxi</h3>
+        <a href="#">Learn more →</a>
+      </div>
+      <div class="form">
+        <div class="tabs"><button class="on" type="button">One Way</button><button type="button">Return</button></div>
+        <div class="field">✈ Antalya Airport (AYT)</div>
+        <div class="field">📍 <span>To (airport, port, address)</span></div>
+        <div class="field">📅 <span>Add date & time</span></div>
+        <div class="pl">
+          <div><label>Passengers</label><div class="step"><button type="button">−</button>1<button type="button">+</button></div></div>
+          <div><label>Luggage pieces</label><div class="step"><button type="button">−</button>1<button type="button">+</button></div></div>
+        </div>
+        <button class="btn" type="button">Continue booking</button>
       </div>
     </section>
 
-    <!-- BOOKING WIDGET -->
-    <div class="bwidget">
-      <div class="bleft">
-        <div class="brand"><span class="mk">◎</span> HolidayCab</div>
-        <div class="tp"><span class="stars">★★★★★</span> 4,824 reviews</div>
-        <h3>Book a trusted, English-speaking driver to pick you up at the same price as a regular taxi</h3>
-        <span class="lm">Learn more →</span>
-      </div>
-      <div class="bright">
-        <div class="toggle"><button class="on">One Way</button><button>Return</button></div>
-        <div class="field"><span class="fi">○</span> From (airport, port, address)</div>
-        <div class="field"><span class="fi">📍</span> To (airport, port, address)</div>
-        <div class="field"><span class="fi">📅</span> Add date &amp; time</div>
-        <div class="row2">
-          <div class="col"><div class="lab">Passengers</div><div class="stepper"><button>−</button><span>1</span><button>+</button></div></div>
-          <div class="col"><div class="lab">Luggage pieces</div><div class="stepper"><button>−</button><span>1</span><button>+</button></div></div>
-        </div>
-        <button class="b-cta" onclick="openModal()">Continue booking</button>
-      </div>
-    </div>
-
-    <!-- TRAM -->
-    <section class="tsec" id="tram">
-      <div class="shead"><span class="bic">🚊</span><h2>How to get from Antalya Airport to the city center by tram</h2></div>
+    <!-- ═══ TRAM ═══ -->
+    <section id="tram" style="margin-top:58px">
+      <h2 class="sec"><span class="badge">🚊</span>How to get from Antalya Airport to the city center by tram</h2>
       <p>Taking the <strong>tram from Antalya Airport to the city center</strong> is quick and efficient. The AntRay line passes through the airport roughly every 15 minutes and stops at central spots like 'İsmet Paşa'. The journey takes around 30 minutes, depending on stops and time of day.</p>
       <h3>How much is the tram from Antalya Airport to the city center?</h3>
       <p>You have two ticket options. The first is a single-use card, which includes the journey (€0.50 / TRY 20) plus a one-time card (€0.30 / TRY 10). Alternatively, an Antalyakart top-up card costs €1.20 (TRY 45), with the standard €0.50 fare still applying. Tickets are bought at the automated machines at the tram station.</p>
-      <div class="statcard">
+      <div class="statband">
         <div class="left">
-          <div class="metrics">
-            <div><div class="k">Cost</div><div class="v">€0.80</div></div>
-            <div><div class="k">Trip Duration</div><div class="v">30 Min.</div></div>
+          <div class="kpis">
+            <div class="kpi"><small>Cost</small><b>€0.80</b></div>
+            <div class="kpi"><small>Trip duration</small><b>30 Min.</b></div>
           </div>
-          <div class="note">Average wait of 10–20 minutes for the AntRay line.</div>
+          <p>Average wait of 10–20 minutes for the AntRay line.</p>
         </div>
-        <div class="right">
-          <div class="rrow"><span class="rk">Convenience</span><span class="stars">★★★★<span class="off">★</span></span></div>
-          <div class="rrow"><span class="rk">Safety</span><span class="stars">★★★★<span class="off">★</span></span></div>
-          <div class="rrow"><span class="rk">Value for Money</span><span class="stars">★★★★★</span></div>
+        <div class="rates">
+          <div class="rate">Convenience <span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rate">Safety <span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rate">Value for money <span class="stars">★★★★★</span></div>
         </div>
-        <div class="infoline"><span class="i">i</span> The AntRay tram operates from 06:00 to 00:00.</div>
       </div>
+      <div class="infoline"><span class="i">i</span>The AntRay tram operates from 06:00 to 00:00.</div>
       <h3>Where do I get the tram from?</h3>
       <p>Havalimanı tram station is a short walk from both terminals. From the Arrivals Hall in any terminal, follow the signage to the tram.</p>
-      <div class="conv-h"><h3>Convenience</h3><span class="stars">★★★★<span class="off">★</span></span></div>
+      <h3>Convenience</h3>
       <p>For the most part, the tram is fast, inexpensive, and reliable. Trams depart frequently and are easy to navigate, but can be crowded during peak hours and uncomfortable with a lot of luggage.</p>
       <h3>Timetables</h3>
-      <div class="timetables">
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">AntRay Tram</div><a href="#" class="tt-sub">Timetables</a></div></div>
-      </div>
-      <div class="tips">
-        <div class="th">Useful Tips <span>▲</span></div>
+      <div class="tt"><a href="#">☰ AntRay Tram — Timetables</a></div>
+      <details class="tips">
+        <summary>Useful tips <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> Check how far your hotel is from the nearest tram stop to get off at the best stop.</li>
-          <li><span class="ck">✓</span> If you buy an Antalyakart, top it up quickly using the Antalyakart Mobil app.</li>
-          <li><span class="ck">✓</span> Payment must be made by card, Apple Pay, or Google Pay.</li>
-          <li><span class="ck">✓</span> The tram is the fastest public-transport option, avoiding most traffic.</li>
+          <li>Check how far your hotel is from the nearest tram stop to get off at the best stop.</li>
+          <li>If you buy an Antalyakart, top it up quickly using the Antalyakart Mobil app.</li>
+          <li>Payment must be made by card, Apple Pay, or Google Pay.</li>
+          <li>The tram is the fastest public-transport option, avoiding most traffic.</li>
         </ul>
-      </div>
+      </details>
     </section>
 
-    <!-- SHUTTLE -->
-    <section class="tsec" id="shuttle">
-      <div class="shead"><span class="bic">🚌</span><h2>How to get from Antalya Airport to the city center by shuttle bus</h2></div>
+    <!-- ═══ SHUTTLE ═══ -->
+    <section id="shuttle">
+      <h2 class="sec"><span class="badge">🚌</span>How to get from Antalya Airport to the city center by shuttle bus</h2>
       <p>Another popular option among budget-conscious travelers is the shuttle bus. Operated by Havas, these shuttles take around 45 minutes to reach the city center and stop in various parts of the city, including the Bus Terminal.</p>
       <p>However, these shuttles depart after each domestic flight lands, so the timetable is sometimes unpredictable and may be inconvenient for international arrivals.</p>
       <h3>How much is the shuttle bus from Antalya Airport to the city center?</h3>
       <p>Although prices vary depending on your stop, the shuttle from Antalya Airport to the city is approximately <strong>€3.30 (TRY 125)</strong>.</p>
-      <div class="statcard">
+      <div class="statband">
         <div class="left">
-          <div class="metrics">
-            <div><div class="k">Cost</div><div class="v">€3.30</div></div>
-            <div><div class="k">Trip Duration</div><div class="v">45 Min.</div></div>
+          <div class="kpis">
+            <div class="kpi"><small>Cost</small><b>€3.30</b></div>
+            <div class="kpi"><small>Trip duration</small><b>45 Min.</b></div>
           </div>
-          <div class="note">Waiting times can be upwards of an hour, as shuttles depart after domestic flights arrive.</div>
+          <p>Waiting times can be upwards of an hour, as shuttles depart after domestic flights arrive.</p>
         </div>
-        <div class="right">
-          <div class="rrow"><span class="rk">Convenience</span><span class="stars">★★★<span class="off">★★</span></span></div>
-          <div class="rrow"><span class="rk">Safety</span><span class="stars">★★★★<span class="off">★</span></span></div>
-          <div class="rrow"><span class="rk">Value for Money</span><span class="stars">★★★★★</span></div>
+        <div class="rates">
+          <div class="rate">Convenience <span class="stars">★★★<span class="off">★★</span></span></div>
+          <div class="rate">Safety <span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rate">Value for money <span class="stars">★★★★<span class="off">★</span></span></div>
         </div>
-        <div class="infoline"><span class="i">i</span> Shuttles align with domestic arrivals, so timetables are subject to change.</div>
       </div>
+      <div class="infoline"><span class="i">i</span>Shuttles align with domestic arrivals, so timetables are subject to change.</div>
       <h3>Where do I get the shuttle bus from?</h3>
       <p>The Havas Airport Shuttle departs from right outside Terminal 3, which handles domestic flights.</p>
-      <div class="conv-h"><h3>Convenience</h3><span class="stars">★★★<span class="off">★★</span></span></div>
+      <h3>Convenience</h3>
       <p>While convenient for anyone arriving at the domestic terminal, it's not the most suitable for passengers landing elsewhere. Shuttles depart roughly hourly but depend on arrival times, leading to lengthy waits.</p>
       <h3>Timetables</h3>
-      <div class="timetables">
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">Havas Airport Shuttle</div><a href="#" class="tt-sub">Journey Planner</a></div></div>
-      </div>
-      <div class="tips">
-        <div class="th">Useful Tips <span>▲</span></div>
+      <div class="tt"><a href="#">☰ Havas Airport Shuttle — Journey Planner</a></div>
+      <details class="tips">
+        <summary>Useful tips <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> Tickets are available at the airport or online to book in advance.</li>
-          <li><span class="ck">✓</span> The Havas shuttles are usually coaches, more comfortable than local city buses.</li>
-          <li><span class="ck">✓</span> Shuttles run hourly during the day but are limited at night.</li>
-          <li><span class="ck">✓</span> There's a short walk from Terminals 1 and 2 to Terminal 3, where the shuttle leaves.</li>
+          <li>Tickets are available at the airport or online to book in advance.</li>
+          <li>The Havas shuttles are usually coaches, more comfortable than local city buses.</li>
+          <li>Shuttles run hourly during the day but are limited at night.</li>
+          <li>There's a short walk from Terminals 1 and 2 to Terminal 3, where the shuttle leaves.</li>
         </ul>
-      </div>
+      </details>
     </section>
 
-    <!-- BUS -->
-    <section class="tsec" id="bus">
-      <div class="shead"><span class="bic">🚐</span><h2>How to get from Antalya Airport to the city center by bus</h2></div>
+    <!-- ═══ LOCAL BUS ═══ -->
+    <section id="bus">
+      <h2 class="sec"><span class="badge">🚐</span>How to get from Antalya Airport to the city center by bus</h2>
       <p>The fifth and final way to travel from <strong>Antalya Airport to the city</strong> is by local bus. During the day, the <strong>400, 600, and 800</strong> buses depart from the airport, reaching the city center and stopping at central spots like 'Yener Ulusoy' within 45 minutes in light traffic. At night, the 600G bus operates instead, though departures are more infrequent.</p>
       <h3>How much is the bus from Antalya Airport to the city center?</h3>
       <p>A one-way ticket on a <strong>local bus from Antalya Airport will set you back about €1.10 (TRY 40)</strong> per person. Tickets are available directly from the driver and can generally be paid for using cash or card.</p>
-      <div class="statcard">
+      <div class="statband">
         <div class="left">
-          <div class="metrics">
-            <div><div class="k">Cost</div><div class="v">€1.10</div></div>
-            <div><div class="k">Trip Duration</div><div class="v">45 Min.</div></div>
+          <div class="kpis">
+            <div class="kpi"><small>Cost</small><b>€1.10</b></div>
+            <div class="kpi"><small>Trip duration</small><b>45 Min.</b></div>
           </div>
-          <div class="note">Local buses depart roughly every hour.</div>
+          <p>Local buses depart roughly every hour.</p>
         </div>
-        <div class="right">
-          <div class="rrow"><span class="rk">Convenience</span><span class="stars">★★★<span class="off">★★</span></span></div>
-          <div class="rrow"><span class="rk">Safety</span><span class="stars">★★★<span class="off">★★</span></span></div>
-          <div class="rrow"><span class="rk">Value for Money</span><span class="stars">★★★★★</span></div>
+        <div class="rates">
+          <div class="rate">Convenience <span class="stars">★★★<span class="off">★★</span></span></div>
+          <div class="rate">Safety <span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rate">Value for money <span class="stars">★★★★★</span></div>
         </div>
-        <div class="infoline"><span class="i">i</span> Bus services run between Antalya Airport and the city from 06:30 to 05:00.</div>
       </div>
+      <div class="infoline"><span class="i">i</span>Bus services run between Antalya Airport and the city from 06:30 to 05:00.</div>
       <h3>Where do I get the bus from?</h3>
       <p>There are bus stops close to each of the three terminals. Some are situated between Terminals 1 and 3, while others are directly outside Terminal 2.</p>
-      <div class="conv-h"><h3>Convenience</h3><span class="stars">★★★<span class="off">★★</span></span></div>
+      <h3>Convenience</h3>
       <p>Catching the local bus is affordable and departures are relatively regular, but waiting times can still be up to an hour — particularly late at night. These buses can be crowded during peak times.</p>
       <h3>Timetables</h3>
-      <div class="timetables">
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">Bus line 400</div><a href="#" class="tt-sub">Timetable</a></div></div>
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">Bus line 600</div><a href="#" class="tt-sub">Timetable</a></div></div>
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">Bus line 800</div><a href="#" class="tt-sub">Timetable</a></div></div>
-        <div class="tt-row"><span class="tic">☰</span><div><div class="tt-name">Bus line 600G</div><a href="#" class="tt-sub">Timetable</a></div></div>
+      <div class="tt">
+        <a href="#">☰ Bus line 400</a><a href="#">☰ Bus line 600</a>
+        <a href="#">☰ Bus line 800</a><a href="#">☰ Bus line 600G</a>
       </div>
-      <div class="tips">
-        <div class="th">Useful Tips <span>▲</span></div>
+      <details class="tips">
+        <summary>Useful tips <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> Inform the driver of your destination as you board; they'll tell you the best stop.</li>
-          <li><span class="ck">✓</span> Due to many stops and congested traffic, the local bus can be the slowest mode.</li>
-          <li><span class="ck">✓</span> If you have a lot of baggage, avoid the bus at rush hour as storage is limited.</li>
-          <li><span class="ck">✓</span> If you pay in cash, you must do so in Turkish Lira.</li>
+          <li>Inform the driver of your destination as you board; they'll tell you the best stop.</li>
+          <li>Due to many stops and congested traffic, the local bus can be the slowest mode.</li>
+          <li>If you have a lot of baggage, avoid the bus at rush hour as storage is limited.</li>
+          <li>If you pay in cash, you must do so in Turkish Lira.</li>
         </ul>
-      </div>
+      </details>
     </section>
-
-    <!-- PRIVATE TRANSFER -->
-    <section class="tsec" id="transfer">
-      <div class="shead"><span class="bic">◎</span><h2>How to get from Antalya Airport to the city center by private transfer</h2></div>
+    <!-- ═══ PRIVATE TRANSFER ═══ -->
+    <section id="transfer">
+      <h2 class="sec"><span class="badge">◎</span>How to get from Antalya Airport to the city center by private transfer</h2>
       <p>The easiest way to beat long lines and cut out waiting times is to book a private <a href="#">Antalya Airport transfer</a> to the center. At HolidayCab, we tailor our transfers to your specific needs while also offering a plethora of extras, such as:</p>
-      <div class="tips" style="border:none;padding:0;">
+      <details class="tips" open style="margin-top:16px">
+        <summary>What's included <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> Competitive, fixed fares</li>
-          <li><span class="ck">✓</span> Complimentary waiting time</li>
-          <li><span class="ck">✓</span> 24/7 customer support</li>
-          <li><span class="ck">✓</span> Cash-free prepayments</li>
+          <li>Competitive, fixed fares</li>
+          <li>Complimentary waiting time</li>
+          <li>24/7 customer support</li>
+          <li>Cash-free prepayments</li>
         </ul>
-      </div>
-      <p>Another perk of arranging your transfer ahead of time is that you're guaranteed to be picked up on time. This alleviates needless stress, letting you start your vacation from the moment you land.</p>
+      </details>
+      <p style="margin-top:18px">Another perk of arranging your transfer ahead of time is that you're guaranteed to be picked up on time. This alleviates needless stress, letting you start your vacation from the moment you land.</p>
       <h3>How much is a private transfer from Antalya Airport to the city center?</h3>
       <p>By booking with HolidayCab, you'll know exactly how much the journey will cost before you land — and pay in advance. Up to three passengers travel in comfort in one of our stylish sedans for <strong>€23 (TRY 863)</strong>, groups of up to eight can book a bigger vehicle for <strong>€28 (TRY 1,050)</strong>, and larger groups of up to 12 can choose a minibus for just <strong>€44 (TRY 1,669)</strong>.</p>
-      <div class="statcard">
+      <div class="statband">
         <div class="left">
-          <div class="metrics">
-            <div><div class="k">Cost</div><div class="v">€23</div></div>
-            <div><div class="k">Trip Duration</div><div class="v">25 Min.</div></div>
+          <div class="kpis">
+            <div class="kpi"><small>Cost</small><b>€23</b></div>
+            <div class="kpi"><small>Trip duration</small><b>25 Min.</b></div>
           </div>
-          <div class="note">*Rates do not vary depending on the time of day.</div>
+          <p>*Rates do not vary depending on the time of day.</p>
         </div>
-        <div class="right">
-          <div class="rrow"><span class="rk">Convenience</span><span class="stars">★★★★★</span></div>
-          <div class="rrow"><span class="rk">Safety</span><span class="stars">★★★★★</span></div>
-          <div class="rrow"><span class="rk">Value for Money</span><span class="stars">★★★★<span class="off">★</span></span></div>
+        <div class="rates">
+          <div class="rate">Convenience <span class="stars">★★★★★</span></div>
+          <div class="rate">Safety <span class="stars">★★★★★</span></div>
+          <div class="rate">Value for money <span class="stars">★★★★<span class="off">★</span></span></div>
         </div>
-        <div class="infoline"><span class="i">i</span> Airport transfers are available from Antalya Airport round-the-clock.</div>
       </div>
+      <div class="infoline"><span class="i">i</span>Airport transfers are available from Antalya Airport round-the-clock.</div>
       <h3>Where do I get my airport transfer from?</h3>
       <p>One of the best things about pre-booking is that you won't even need to step outside to find your driver. As you enter the Arrivals Hall, you'll spot your driver holding a sign with your name. They'll help bring your suitcases to your modern, sanitized vehicle, which you'll have selected beforehand.</p>
-      <div class="conv-h"><h3>Convenience</h3><span class="stars">★★★★★</span></div>
+      <h3>Convenience</h3>
       <p>Not only do private transfers offer all the conveniences of a standard taxi, they come with add-ons to make your experience more enjoyable. You set your pickup time and select your preferred vehicle, saving time and locking in a competitive fare.</p>
-      <div class="tips">
-        <div class="th">Useful Tips <span>▲</span></div>
+      <details class="tips">
+        <summary>Useful tips <span class="chev"></span></summary>
         <ul>
-          <li><span class="ck">✓</span> All HolidayCab drivers speak fluent English and answer any questions about the city.</li>
-          <li><span class="ck">✓</span> A private transfer is the only way to guarantee an on-time pickup on a tight schedule.</li>
-          <li><span class="ck">✓</span> Set your pickup time for 20–30 minutes after your landing time.</li>
-          <li><span class="ck">✓</span> Traffic won't change your quoted price with a private transfer.</li>
+          <li>All HolidayCab drivers speak fluent English and answer any questions about the city.</li>
+          <li>A private transfer is the only way to guarantee an on-time pickup on a tight schedule.</li>
+          <li>Set your pickup time for 20–30 minutes after your landing time.</li>
+          <li>Traffic won't change your quoted price with a private transfer.</li>
         </ul>
+      </details>
+
+      <h3 style="margin-top:40px">Antalya Airport private transfers</h3>
+      <p>Powered by HolidayCab. Book a trained, English-speaking driver to pick you up for a fixed price with no hidden fees.</p>
+      <div class="veh">
+        <div class="vcard">
+          <div class="vico">🚗</div>
+          <h4>Sedan</h4><div class="cap">up to 3 passengers</div>
+          <div class="vprice">€23</div><div class="per">Starting from 7.7 EUR / passenger</div>
+          <div class="models">Skoda Octavia, Toyota Corolla, Renault Megane</div>
+        </div>
+        <div class="vcard">
+          <div class="vico">🚐</div>
+          <h4>Minivan</h4><div class="cap">up to 8 passengers</div>
+          <div class="vprice">€28</div><div class="per">Starting from 3.5 EUR / passenger</div>
+          <div class="models">Mercedes-Benz Vito, Volkswagen Multivan, Volkswagen Caravelle</div>
+        </div>
+        <div class="vcard">
+          <div class="vico">🚎</div>
+          <h4>Minibus</h4><div class="cap">up to 12 passengers</div>
+          <div class="vprice">€44</div><div class="per">Starting from 3.7 EUR / passenger</div>
+          <div class="models">Mercedes-Benz Sprinter</div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:24px"><a class="btn" href="#">View Private Airport Transfer Options</a></p>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section id="info">
+      <h2 class="sec">Frequently asked questions</h2>
+      <details class="faq">
+        <summary>How much is a taxi from Antalya Airport to the city center? <span class="chev"></span></summary>
+        <div class="a"><p>Taxi costs from Antalya Airport to Antalya can vary substantially. Although taxis are metered, many drivers offer a fixed fare in advance. With a metered taxi, expect the drive to cost around €12.30 (TRY 463) on average. With HolidayCab, you'll pay €23 (TRY 865) for this trip while eliminating waiting times and the need to negotiate.</p></div>
+      </details>
+      <details class="faq">
+        <summary>How do I get to Antalya city center from the airport? <span class="chev"></span></summary>
+        <div class="a"><p>You have five options: a private HolidayCab transfer (door-to-door, 25 min), a metered taxi, the AntRay tram, the Havas shuttle bus, or a local bus (400/600/800). A private transfer is the most comfortable; the tram is the cheapest daytime option.</p></div>
+      </details>
+      <details class="faq">
+        <summary>How far is Antalya city center from the airport? <span class="chev"></span></summary>
+        <div class="a"><p>Antalya Airport is around 15 km east of the city center. The drive takes about 25 minutes in normal traffic.</p></div>
+      </details>
+      <details class="faq">
+        <summary>How much is a bus ticket from Antalya Airport to the city center? <span class="chev"></span></summary>
+        <div class="a"><p>A one-way local bus ticket costs about €1.10 (TRY 40) per person, payable to the driver by cash or card. The Havas shuttle is approximately €3.30 (TRY 125).</p></div>
+      </details>
+    </section>
+
+    <!-- ═══ AUTHOR ═══ -->
+    <section>
+      <div class="author">
+        <div class="avatar">HC</div>
+        <div><b>HolidayCab Editorial</b>The HolidayCab travel team writes practical, up-to-date airport transfer guides for 374 destinations worldwide — so you always know your options before you land.</div>
       </div>
     </section>
 
-    <!-- VEHICLE CARDS -->
-    <div class="vehicles" id="info">
-      <div class="vh"><span class="vic">🚗</span><h2>Antalya Airport private transfers</h2></div>
-      <p class="vsub">Powered by HolidayCab. Book a trained, English-speaking driver to pick you up for a fixed price with no hidden fees.</p>
-      <div class="vgrid">
-        <div class="vcard">
-          <div class="vimg">🚗</div>
-          <div class="vname">Sedan up to 3 passengers</div>
-          <div class="vprice"><b>€23</b> Starting from 7.7 EUR / passenger</div>
-        </div>
-        <div class="vcard">
-          <div class="vimg">🚐</div>
-          <div class="vname">Minivan up to 8 passengers</div>
-          <div class="vprice"><b>€28</b> Starting from 3.5 EUR / passenger</div>
-          <div class="vmodel">Mercedes-Benz Vito, Volkswagen Multivan, Volkswagen Caravelle</div>
-        </div>
-        <div class="vcard">
-          <div class="vimg">🚎</div>
-          <div class="vname">Minibus up to 12 passengers</div>
-          <div class="vprice"><b>€34</b> Starting from 2.8 EUR / passenger</div>
-          <div class="vmodel">Mercedes-Benz Sprinter</div>
-        </div>
-      </div>
-      <button class="vcta" onclick="openModal()">View Private Airport Transfer Options</button>
-    </div>
-
-    <!-- FAQ -->
-    <section class="faq">
-      <h2>Frequently asked questions</h2>
-      <div class="fitem open">
-        <div class="fq" onclick="toggleFaq(this)">How much is a taxi from Antalya Airport to the city center? <span class="fch">▼</span></div>
-        <div class="fa">Taxi costs from Antalya Airport to Antalya can vary substantially. Although taxis are metered, many drivers offer a fixed fare in advance. With a metered taxi, expect the drive to cost around €12.30 (TRY 463) on average. With HolidayCab, you'll pay €23 (TRY 865) for this trip while eliminating waiting times and the need to negotiate.</div>
-      </div>
-      <div class="fitem">
-        <div class="fq" onclick="toggleFaq(this)">How do I get to Antalya city center from the airport? <span class="fch">▼</span></div>
-        <div class="fa">You have five options: a private HolidayCab transfer (door-to-door, 25 min), a metered taxi, the AntRay tram, the Havas shuttle bus, or a local bus (400/600/800). A private transfer is the most comfortable; the tram is the cheapest daytime option.</div>
-      </div>
-      <div class="fitem">
-        <div class="fq" onclick="toggleFaq(this)">How far is Antalya city center from the airport? <span class="fch">▼</span></div>
-        <div class="fa">Antalya Airport is around 15 km east of the city center. The drive takes about 25 minutes in normal traffic.</div>
-      </div>
-      <div class="fitem">
-        <div class="fq" onclick="toggleFaq(this)">How much is a bus ticket from Antalya Airport to the city center? <span class="fch">▼</span></div>
-        <div class="fa">A one-way local bus ticket costs about €1.10 (TRY 40) per person, payable to the driver by cash or card. The Havas shuttle is approximately €3.30 (TRY 125).</div>
+    <!-- ═══ POSTS ═══ -->
+    <section>
+      <h2 class="sec">Posts you might like</h2>
+      <div class="posts">
+        <a class="post" href="#"><div class="ph"></div><p>The Best Beaches Near Antalya</p></a>
+        <a class="post" href="#"><div class="ph"></div><p>Exploring Antalya's Old Town (Kaleiçi)</p></a>
+        <a class="post" href="#"><div class="ph"></div><p>Top Family Attractions in Antalya</p></a>
+        <a class="post" href="#"><div class="ph"></div><p>A Day Trip from Antalya to Side</p></a>
       </div>
     </section>
 
-    <!-- AUTHOR -->
-    <div class="author">
-      <div class="aav"></div>
-      <div>
-        <div class="an">HolidayCab Editorial</div>
-        <p>The HolidayCab travel team writes practical, up-to-date airport transfer guides for 374 destinations worldwide — so you always know your options before you land.</p>
-      </div>
-    </div>
-
-    <!-- POSTS -->
-    <section class="posts">
-      <h2>Posts you might like</h2>
-      <div class="pgrid">
-        <div class="pcard"><div class="pimg" style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=700&q=80')"></div><div class="pt">The Best Beaches Near Antalya</div></div>
-        <div class="pcard"><div class="pimg" style="background-image:url('https://images.unsplash.com/photo-1589561253898-768105ca91a8?auto=format&fit=crop&w=700&q=80')"></div><div class="pt">Exploring Antalya's Old Town (Kaleiçi)</div></div>
-        <div class="pcard"><div class="pimg" style="background-image:url('https://images.unsplash.com/photo-1559682468-a6a29e7d9517?auto=format&fit=crop&w=700&q=80')"></div><div class="pt">Top Family Attractions in Antalya</div></div>
-        <div class="pcard"><div class="pimg" style="background-image:url('https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=700&q=80')"></div><div class="pt">A Day Trip from Antalya to Side</div></div>
-      </div>
-    </section>
-
-    <!-- ============ INTERLINK BLOCK (all routes) ============ -->
-    <section class="interlink">
-      <h2>Transfer Options in Antalya</h2>
-      <p class="sub">All HolidayCab routes and guides from Antalya Airport (AYT)</p>
-      <div class="ilgrid">
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Side<small>65 km · from €41</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1559825481-12a05cc00344?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Belek<small>40 km · from €38</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Kemer<small>55 km · from €45</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Alanya<small>120 km · from €70</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Manavgat<small>72 km · from €48</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Lara<small>12 km · from €20</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Kalkan<small>205 km · from €120</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1583309217394-d4b3a8c4f3a0?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport → Kaş<small>190 km · from €115</small></span></a>
-        <a class="ilcard" href="#"><span class="ilimg" style="background-image:url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=200&q=70')"></span><span class="ilt">Antalya Airport Taxi<small>Prices &amp; tips for AYT taxis</small></span></a>
+    <!-- ═══ ROUTES GRID ═══ -->
+    <section>
+      <h2 class="sec">Transfer options in Antalya</h2>
+      <p>All HolidayCab routes and guides from Antalya Airport (AYT)</p>
+      <div class="routes-grid">
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Side</div><div class="meta">65 km · <b>from €41</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Belek</div><div class="meta">40 km · <b>from €38</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Kemer</div><div class="meta">55 km · <b>from €45</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Alanya</div><div class="meta">120 km · <b>from €70</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Manavgat</div><div class="meta">72 km · <b>from €48</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Lara</div><div class="meta">12 km · <b>from €20</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Kalkan</div><div class="meta">205 km · <b>from €120</b></div></a>
+        <a class="rcard" href="#"><div class="from">From Antalya Airport</div><div class="to">→ Kaş</div><div class="meta">190 km · <b>from €115</b></div></a>
+        <a class="rcard" href="#"><div class="from">Guide</div><div class="to">Antalya Airport Taxi</div><div class="meta">Prices & tips for AYT taxis</div></a>
       </div>
     </section>
 
   </main>
 </div>
-
-<!-- WORLDWIDE -->
-<div class="worldwide">
-  <span class="wctrl" onclick="alert('Would expand into an alphabetical list of all 374 destinations.')">374 Destinations Worldwide ▾</span>
 </div>
 
-<!-- FOOTER -->
+<!-- ═══ DESTINATIONS ACCORDION ═══ -->
+<div class="dest-toggle">
+  <button id="destBtn" aria-expanded="false">374 Destinations Worldwide <span class="chev"></span></button>
+</div>
+<div class="dest-list" id="destList">
+  <a href="#">Amsterdam</a><a href="#">Antalya</a><a href="#">Athens</a><a href="#">Barcelona</a><a href="#">Belek</a>
+  <a href="#">Bodrum</a><a href="#">Crete</a><a href="#">Dalaman</a><a href="#">Dubai</a><a href="#">Istanbul</a>
+  <a href="#">Izmir</a><a href="#">Lisbon</a><a href="#">London</a><a href="#">Madrid</a><a href="#">Mallorca</a>
+  <a href="#">Marrakech</a><a href="#">Milan</a><a href="#">Nice</a><a href="#">Paris</a><a href="#">Prague</a>
+  <a href="#">Rhodes</a><a href="#">Rome</a><a href="#">Santorini</a><a href="#">Tenerife</a><a href="#">Vienna</a>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div><h4>Transfers</h4><ul><li><a href="#">Antalya</a></li><li><a href="#">Dalaman</a></li><li><a href="#">Mallorca</a></li><li><a href="#">Istanbul</a></li></ul></div>
-      <div><h4>Sightseeing</h4><ul><li><a href="#">City Tours</a></li><li><a href="#">Day Trips</a></li></ul></div>
-      <div><h4>Guides</h4><ul><li><a href="#">Travel Guides</a></li><li><a href="#">Blog</a></li></ul></div>
-      <div><h4>For Partners</h4><ul><li><a href="#">Hotels</a></li><li><a href="#">Travel Agencies</a></li></ul></div>
-      <div><h4>For Drivers</h4><ul><li><a href="#">Individual Drivers</a></li><li><a href="#">Driver Companies</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="#">About us</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div>
+        <div class="flogo"><span class="mark">◎</span>HolidayCab</div>
+        <a href="#">Help Center</a>
+      </div>
+      <div><h5>Transfers</h5><a href="#">Antalya</a><a href="#">Dalaman</a><a href="#">Mallorca</a><a href="#">Istanbul</a></div>
+      <div><h5>Sightseeing</h5><a href="#">City Tours</a><a href="#">Day Trips</a></div>
+      <div><h5>Guides</h5><a href="#">Travel Guides</a><a href="#">Blog</a></div>
+      <div><h5>For Partners</h5><a href="#">Hotels</a><a href="#">Travel Agencies</a></div>
+      <div><h5>For Drivers</h5><a href="#">Individual Drivers</a><a href="#">Driver Companies</a></div>
     </div>
-    <div class="fbottom"><span>© 2025 HolidayCab. All rights reserved.</span><span>EN · Privacy · Terms</span></div>
+    <div class="fbottom">
+      <span>© 2026 HolidayCab. All rights reserved.</span>
+      <span>EN · Privacy · Terms</span>
+    </div>
   </div>
 </footer>
 
-<!-- MODAL -->
-<div class="overlay" id="overlay">
-  <div class="modal">
-    <button class="x" onclick="closeModal()">×</button>
-    <h3>Book a transfer</h3>
-    <div class="toggle" style="background:#eef1f5;"><button class="on" style="background:#fff;color:var(--navy);">One Way</button><button style="color:var(--muted);">Return</button></div>
-    <div class="field">✈ Antalya Airport (AYT) <span style="margin-left:auto;color:var(--muted);">×</span></div>
-    <div class="field"><span class="fi">📍</span> To (airport, port, address)</div>
-    <div class="field"><span class="fi">📅</span> Add date &amp; time</div>
-    <div class="row2" style="margin-bottom:14px;">
-      <div class="col"><div class="lab" style="color:var(--ink);">Passengers</div><div class="stepper" style="border:1px solid var(--line);"><button>−</button><span>1</span><button>+</button></div></div>
-      <div class="col"><div class="lab" style="color:var(--ink);">Luggage pieces</div><div class="stepper" style="border:1px solid var(--line);"><button>−</button><span>1</span><button>+</button></div></div>
-    </div>
-    <button class="b-cta">Search</button>
-  </div>
-</div>
-
 <script>
-  function toggleFaq(el){ el.parentElement.classList.toggle('open'); }
-  function openModal(){ document.getElementById('overlay').classList.add('show'); }
-  function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
-  function jump(id){ document.getElementById(id).scrollIntoView({behavior:'smooth'}); }
-  document.getElementById('overlay').addEventListener('click',function(e){ if(e.target===this) closeModal(); });
-
-  // toggle pills
-  document.querySelectorAll('.toggle').forEach(function(t){
-    t.querySelectorAll('button').forEach(function(b){
-      b.addEventListener('click',function(){
-        t.querySelectorAll('button').forEach(function(x){x.classList.remove('on'); x.style.background=''; x.style.color='';});
-        b.classList.add('on');
-        if(t.closest('.modal')){ b.style.background='#fff'; b.style.color='var(--navy)'; }
-      });
-    });
+/* ── breadcrumb dropdowns ── */
+const dds = document.querySelectorAll('[data-dd]');
+dds.forEach(dd => {
+  const btn = dd.querySelector('.crumb-btn');
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = dd.classList.contains('open');
+    dds.forEach(d => { d.classList.remove('open'); d.querySelector('.crumb-btn').setAttribute('aria-expanded','false'); });
+    if (!isOpen) { dd.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
   });
+});
+document.addEventListener('click', () => dds.forEach(d => { d.classList.remove('open'); d.querySelector('.crumb-btn').setAttribute('aria-expanded','false'); }));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') dds.forEach(d => d.classList.remove('open')); });
 
-  // steppers
-  document.querySelectorAll('.stepper').forEach(function(s){
-    var v=s.querySelector('span'), btns=s.querySelectorAll('button');
-    btns[0].addEventListener('click',function(){ var n=Math.max(1,parseInt(v.textContent)-1); v.textContent=n; });
-    btns[1].addEventListener('click',function(){ var n=parseInt(v.textContent)+1; v.textContent=n; });
-  });
+/* ── passenger price logic ── */
+const fares = {
+  transfer: p => p <= 3 ? 23 : p <= 8 ? 28 : 44,
+  taxi:     p => 12.30 * Math.ceil(p / 4),
+  tram:     p => 0.80 * p,
+  shuttle:  p => 3.30 * p,
+  bus:      p => 1.10 * p
+};
+const fmt = n => '€' + (Number.isInteger(n) ? n : n.toFixed(2));
+document.getElementById('pax').addEventListener('change', e => {
+  const p = +e.target.value;
+  for (const k in fares) document.getElementById('p-' + k).textContent = fmt(fares[k](p));
+});
 
-  // active state on side menu while scrolling
-  var secs=['compare','taxi','tram','shuttle','bus','transfer','info'];
-  window.addEventListener('scroll',function(){
-    var pos=window.scrollY+140, cur='compare';
-    secs.forEach(function(id){ var el=document.getElementById(id); if(el && el.offsetTop<=pos) cur=id; });
-    document.querySelectorAll('.sidemenu a').forEach(function(a){
-      a.classList.toggle('active', a.getAttribute('href')==='#'+cur);
-    });
+/* ── sidebar scrollspy ── */
+const links = [...document.querySelectorAll('#sideNav a')];
+const secs = links.map(a => document.querySelector(a.getAttribute('href')));
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (en.isIntersecting) {
+      links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+    }
   });
+}, { rootMargin: '-20% 0px -65% 0px' });
+secs.forEach(s => s && spy.observe(s));
+
+/* ── destinations accordion ── */
+const destBtn = document.getElementById('destBtn');
+destBtn.addEventListener('click', () => {
+  const list = document.getElementById('destList');
+  const open = list.classList.toggle('open');
+  destBtn.setAttribute('aria-expanded', open);
+  destBtn.querySelector('.chev').style.transform = open ? 'rotate(225deg)' : 'rotate(45deg) translateY(-2px)';
+});
+
+/* ── booking tabs ── */
+document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+  b.parentElement.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+}));
+
+/* ── stepper buttons ── */
+document.querySelectorAll('.step').forEach(st => {
+  const [minus, plus] = st.querySelectorAll('button');
+  const get = () => +st.childNodes[1].textContent || +st.textContent.replace(/\D/g,'');
+  minus.addEventListener('click', () => { const v = Math.max(1, get() - 1); st.childNodes[1].textContent = v; });
+  plus.addEventListener('click', () => { const v = Math.min(12, get() + 1); st.childNodes[1].textContent = v; });
+});
 </script>
-
 </body>
 </html>
